@@ -1,11 +1,22 @@
-﻿class EscolaDoRock
+﻿class Musica
 {
-    public string titulo;
-    public int anoLancamento;
+    public string nome;
+    public string artista;
+    public int duracao;
+    public bool disponivel;
 
-    public void ExibirInformacoes()
+    public void ExibirFichaTecnica()
     {
-        Console.WriteLine($"Título: {titulo}");
-        Console.WriteLine($"Ano de Lançamento: {anoLancamento}");
+        Console.WriteLine($"Nome: {nome}");
+        Console.WriteLine($"Artista: {artista}");
+        Console.WriteLine($"Duração: {duracao}");
+        if (disponivel)
+        {
+            Console.WriteLine("Disponível no plano.");
+        }
+        else
+        {
+            Console.WriteLine("Adquira o plano Plus+");
+        }
     }
 }
