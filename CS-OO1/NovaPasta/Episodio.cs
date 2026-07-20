@@ -2,7 +2,7 @@
 {
     public int Duracao { get; }
     public int Ordem { get; }
-    public string Resumo { get; }
+    public string Resumo => $"Número: {Ordem}\nTítulo: {Titulo}\nDuração: {Duracao}\nConvidados: {(Convidados.Count > 0 ? string.Join(", ", Convidados) : "Nenhum convidado" ) }\n- - - - - - ";
     public string Titulo { get; }
     public List<string> Convidados { get; } = new List<string>();
     private static int Instancias = 0;
@@ -13,7 +13,7 @@
         this.Titulo = Titulo;
         this.Duracao = Duracao;
         this.Ordem = Instancias;
-        this.Resumo = $"Número: {Ordem}\nTítulo: {Titulo}\nDuração: {Duracao}\n- - - - - - ";
+        
         
     }
 

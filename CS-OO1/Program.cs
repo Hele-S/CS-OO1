@@ -18,6 +18,8 @@
 Podcast podcast1 = new Podcast("Pod1", "Host1");
 Episodio Ep1 = new Episodio("Episódio 1", 30);
 Episodio Ep2 = new Episodio("Episódio 2", 31);
+Ep2.AdicionarConvidado("Convidado 1");
+Ep2.AdicionarConvidado("Convidado 2");
 Console.WriteLine(Ep2.Resumo);
 Console.WriteLine(Ep1.Resumo);
 Console.WriteLine(Ep1.Ordem);
