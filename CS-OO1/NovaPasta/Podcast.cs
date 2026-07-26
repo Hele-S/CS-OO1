@@ -16,8 +16,8 @@
     }
     public void ExibirEpisodios()
     {
-        Console.WriteLine($"Nome: {this.Nome}\nHost: {this.Host}\nEpisódeos:");
-        foreach (Episodio episodio in episodios)
+        Console.WriteLine($"Nome: {this.Nome}\nHost: {this.Host}\n\nEpisódeos:\n");
+        foreach (Episodio episodio in episodios.OrderBy(e => e.Ordem))
         {
             Console.WriteLine(episodio.Resumo);
         }
